@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    animation-name:masomasAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
+}
+
+.navigationWrapper{
+    width:100%;
+    background-color: #555;
+    overflow: auto;
+    padding: 1%;
+    animation-name: example;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+@keyframes example{
+    from {background-color: red;}
+  to {background-color: yellow;}
+}
+a{
+    float: left;
+    padding: 12px;
+    color: white;
+    font-size: 17px;
+    text-shadow: 1px 1px;
+    font-weight:800; 
+    text-decoration: none;
+    transition:0.3s;
+}
+a:hover{
+    background-color: #000;
+    font-size:25px;
+    transition:0.3s;
+}
+
+.active {
+    background-color: purple;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar, a, .search {
+      float: none;
+      display: block;
+    }
+}
+
+    .search{
+        margin-left: 800px;
+    }
+
+@keyframes masomasAnimation{
+    0% {background-color: tomato;}
+    25% {background-color: violet;}
+    50% {background-color: yellowgreen;}
+    75% {background-color: teal;}
+    100% {background-color: turquoise;}
+}
